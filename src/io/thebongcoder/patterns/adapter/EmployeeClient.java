@@ -20,6 +20,8 @@ public class EmployeeClient {
 
         employeeList.add(new EmployeeAdapterLdap(employeeLdap));
 
+        EmployeeCsv employeeCsv = new EmployeeCsv("1908,Luis,Serena,luis987@gmail.com");
+        employeeList.add(new EmployeeAdapterCsv(employeeCsv));
 
         System.out.println(employeeList);
 
